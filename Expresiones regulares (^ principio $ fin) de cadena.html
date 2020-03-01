@@ -1,0 +1,18 @@
+<html>
+<head>
+</head>
+<body>
+<script type="text/javascript">
+var oracion=prompt('ingrese una horacion','');
+var patron1=/^-/;
+if (patron1.test(oracion))
+	alert('Comienza la oracion den el caracter -');
+else
+	alert('No comienza con el caracter - ');
+var patron2=/^hora/;
+if (patron2.test(oracion))
+	alert('Comienza la horacion con la palabra hora');
+else
+	alert('No comienza la oracion con la palabra hora');
+</script>
+</body>

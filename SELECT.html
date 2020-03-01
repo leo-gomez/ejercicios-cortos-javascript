@@ -1,0 +1,25 @@
+<html>
+<head>
+</head>
+<body>
+	<script type="text/javascript">
+	{
+		var seleccion=document.getElementById('selected1');
+		document.getElementById('text1').value=seleccion.selectesIndex;
+		document.getElementById('text2').value=seleccion.options[seleccion.selectedIndex].text;
+		document.getElementById('text3').value=seleccion.options[seleccion.selectedIndex].value;
+	}
+	</script>
+	<form>
+		<select id='select1' onChange='cambiarColor()'>
+			<option value='0xff0000'>Rojo</option>
+			<option value='0x00ff00'>verde</option>
+			<option value='0x0000ff'>azul</option>
+		</select>
+	<br>
+	Numero de indice seleccionado del objeto SELECT:<input type='text' id='text1'><br>
+	Texto seleccionado:<input type="text" id="text2"><br>
+    Valor asociado:<input type="text" id="text3"><br>
+    </form>
+</body>
+</html>
